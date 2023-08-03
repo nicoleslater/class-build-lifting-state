@@ -27,7 +27,7 @@ export default function NewDogForm() {
       favFlavor: selectOption,
       contact: newDog.contact,
     };
-    // handleAddDog(createDog);
+    handleAddDog(createDog);
   }
 
   function handleCheckboxChange() {
@@ -42,7 +42,7 @@ export default function NewDogForm() {
     event.preventDefault();
     addDog();
     resetDogForm();
-    // toggleNewDogForm();
+    toggleNewDogForm();
   }
 
   function handleTextChange(event) {
